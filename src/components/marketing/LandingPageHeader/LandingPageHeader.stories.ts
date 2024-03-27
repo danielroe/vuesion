@@ -11,7 +11,7 @@ const Template: StoryFn = (args) => ({
   components: { LandingPageHeader, ComponentDocs },
   data() {
     return {
-      server: process.server,
+      server: import.meta.server,
     };
   },
   inheritAttrs: false,
